@@ -5,6 +5,7 @@
 *.slo
 *.lo
 *.o
+Dragon.obj
 
 # Precompiled Headers
 *.gch
