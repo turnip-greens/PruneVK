@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+	<Target Name="CompileVertexShaders" BeforeTargets="Build">
+		<Message Text="=== Compiling vertex shaders ===" Importance="high" />
+		<Exec Command="C:\VulkanSDK\1.4.341.1\Bin\glslc.exe &quot;$(ProjectDir)shaders\simple_shader.vert&quot; -o &quot;$(ProjectDir)shaders\simple_shader.vert.spv&quot;" />
+	</Target>
+
+	<Target Name="CompileFragmentShaders" BeforeTargets="Build">
+		<Message Text="=== Compiling fragment shaders ===" Importance="high" />
+		<Exec Command="C:\VulkanSDK\1.4.341.1\Bin\glslc.exe &quot;$(ProjectDir)shaders\simple_shader.frag&quot; -o &quot;$(ProjectDir)shaders\simple_shader.frag.spv&quot;" />
+	</Target>
+
+</Project>

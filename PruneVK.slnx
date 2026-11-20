@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="PruneVK.vcxproj" Id="f83c4213-fa83-4ea6-97d7-c56a747523c3" />
+</Solution>
